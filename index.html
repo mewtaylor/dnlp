@@ -11,6 +11,7 @@
 	============================================= -->
 	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	<link rel="stylesheet" href="css/dark.css" type="text/css" />
 	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
@@ -70,8 +71,8 @@
 
 						<ul class="one-page-menu">
 							<li class="current">
-								<a href="#" data-href="#header">
-									<div>Home</div>
+								<a href="#" data-href="#section-mission">
+									<div>Mission</div>
 								</a>
 							</li>
 							<li>
@@ -123,8 +124,12 @@
 					</div>
 
 					<div class="center bottommargin">
-						<a href="demo.html" target="_blank" class="button  button-xlarge nobottommargin"><i class="icon-play-circle"></i>prototype</a>
-						<a href="https://arxiv.org/abs/1805.03677" target="_blank" class="button  button-xlarge nobottommargin"><i class="icon-line-paper"></i>paper</a>
+						<a href="demo.html" target="_blank" class="button  button-xlarge nobottommargin">
+							<i class="icon-play-circle"></i>prototype
+						</a>
+						<a href="https://arxiv.org/abs/1805.03677" target="_blank" class="button  button-xlarge nobottommargin">
+							<i class="icon-line-paper"></i>paper
+						</a>
 						<!-- 						<a href="mailto:nutrition@media.mit.edu" class="button  button-xlarge nobottommargin"><i class="icon-line2-users"></i>Work with us</a> -->
 					</div>
 
@@ -389,39 +394,39 @@
 				</div> -->
 
 				<div class="container clearfix">
-
-					<div id="section-problem" class="heading-block title-center page-section">
-						<h2>The Problem</h2>
-						<span>Garbage in, Garbage out</span>
+					<div id="section-mission" class="heading-block title-center page-section">
+						<h2>Our Mission</h2>
 					</div>
-
-					<div id="side-navigation">
-
-						<div class="col_one_third">
-
+					<div id="side-navigation" class="row mission">
+						<div class="col-sm-6 col-md-4 col-md-offset-2">
 							<div id="snav-content1">
-								<h3>Incomplete, misunderstood, and historically problematic data can negatively influence AI algorithms.</h3> Algorithms matter, and so does the data they’re trained on. To improve the accuracy and fairness of algorithms that determine everything from navigation directions to mortgage approvals, we need to make it easier for practitioners to quickly
-								assess the viability and fitness of datasets they intend to train AI algorithms on.<br><br> There’s a missing step in the AI development pipeline: assessing datasets based on standard quality measures that are both qualitative and quantitative.
-								We are working on packaging up these measures into an easy to use <i>Dataset Nutrition Label</i>.
+								<h3>
+									We believe that technology should help us move forward without mirroring existing systemic injustice
+								</h3>
 							</div>
-
 						</div>
-
-						<div class="col_two_third col_last">
-							<img src="img/diagram.png">
+						<div class="col-sm-6 col-md-5">
+							<div id="snav-content1">
+								<p class="lead">The Dataset Nutrition Label team:</p>
+								<ul class="mission-list" style="list-style-type:none;">
+									<li>1. Creates tools and practices that encourage responsible AI development</li>
+									<li>2. Partners across disciplines to drive broader change</li>
+									<li>3. Builds inclusion and equity into our work</li>
+								</ul>
+							</div>
 						</div>
-
 					</div>
-
+					<div class="title-center">
+						<p class="lead">Want to get involved? <a href="#section-contact">Contact Us!</a></p>
+					</div>
 				</div>
 
 				<div class="section">
-
 					<div class="container clearfix">
 
-						<div id="section-solution" class="heading-block title-center page-section">
-							<h2>Our Solution</h2>
-							<span>Standard interactive reports</span>
+						<div id="section-problem" class="heading-block title-center page-section">
+							<h2>The Problem</h2>
+							<span>Garbage in, Garbage out</span>
 						</div>
 
 						<div id="side-navigation">
@@ -429,199 +434,208 @@
 							<div class="col_one_third">
 
 								<div id="snav-content1">
-									<h3>A "nutrition label" for datasets.</h3> The Dataset Nutrition Label aims to create a standard for interrogating datasets for measures that will ultimately drive the creation of better, more inclusive algorithms. <br><br> Our current prototype includes a highly-generalizable interactive
-									data diagnostic label that allows for exploring any number of domain-specific aspects in datasets. Similar to a nutrition label on food, our label aims to highlight the key ingredients in a dataset such as meta-data and populations, as well as
-									unique or anomalous features regarding distributions, missing data, and comparisons to other ‘ground truth’ datasets. We are currently testing our label on several datasets, with an eye towards open sourcing this effort and gathering community
-									feedback. <br><br> The design utilizes a ‘modular’ framework that can be leveraged to add or remove areas of investigation based on the domain of the dataset. For example, Nutrition Labels for data about people may include modules about the representation
-									of race and gender, while Nutrition Labels for data about trees may not require that module. <br> <br> To learn more about the prototype, check out our <a href="https://ahmedhosny.github.io/datanutrition/" target="_blank">live protoype</a> built
-									on the Dollars for Docs dataset from <a href="https://www.propublica.org/" target="_blank">ProPublica</a>. A first draft of our paper can be found <a href="https://arxiv.org/abs/1805.03677" target="_blank">here</a>.
-
+									<h3>Incomplete, misunderstood, and historically problematic data can negatively influence AI algorithms.</h3> Algorithms matter, and so does the data they’re trained on. To improve the accuracy and fairness of algorithms that determine everything from navigation directions to mortgage approvals, we need to make it easier for practitioners to quickly
+									assess the viability and fitness of datasets they intend to train AI algorithms on.<br><br> There’s a missing step in the AI development pipeline: assessing datasets based on standard quality measures that are both qualitative and quantitative.
+									We are working on packaging up these measures into an easy to use <i>Dataset Nutrition Label</i>.
 								</div>
 
 							</div>
 
 							<div class="col_two_third col_last">
-								<img src="img/label.png">
+								<img src="img/diagram.png">
 							</div>
 
+						</div>
+
+					</div>
+				</div>
+
+
+				<div class="container clearfix">
+
+					<div id="section-solution" class="heading-block title-center page-section">
+						<h2>Our Solution</h2>
+						<span>Standard interactive reports</span>
+					</div>
+
+					<div id="side-navigation">
+
+						<div class="col_one_third">
+
+							<div id="snav-content1">
+								<h3>A "nutrition label" for datasets.</h3> The Dataset Nutrition Label aims to create a standard for interrogating datasets for measures that will ultimately drive the creation of better, more inclusive algorithms. <br><br> Our current prototype includes a highly-generalizable interactive
+								data diagnostic label that allows for exploring any number of domain-specific aspects in datasets. Similar to a nutrition label on food, our label aims to highlight the key ingredients in a dataset such as meta-data and populations, as well as
+								unique or anomalous features regarding distributions, missing data, and comparisons to other ‘ground truth’ datasets. We are currently testing our label on several datasets, with an eye towards open sourcing this effort and gathering community
+								feedback. <br><br> The design utilizes a ‘modular’ framework that can be leveraged to add or remove areas of investigation based on the domain of the dataset. For example, Nutrition Labels for data about people may include modules about the representation
+								of race and gender, while Nutrition Labels for data about trees may not require that module. <br> <br> To learn more about the prototype, check out our <a href="https://ahmedhosny.github.io/datanutrition/" target="_blank">live protoype</a> built
+								on the Dollars for Docs dataset from <a href="https://www.propublica.org/" target="_blank">ProPublica</a>. A first draft of our paper can be found <a href="https://arxiv.org/abs/1805.03677" target="_blank">here</a>.
+
+							</div>
+
+						</div>
+
+						<div class="col_two_third col_last">
+							<img src="img/label.png">
 						</div>
 
 					</div>
 
 				</div>
 
-				<section id="section-team" class="page-section">
+				<div class="section">
+					<section id="section-team" class="page-section">
 
-					<div class="heading-block center">
-						<h2>Our Team</h2>
-						<span>We are a group of researchers and technologists working together to tackle the challenges of ethics and governance of Artificial Intelligence as a part of the <a href="https://bkmla.org/" target="_blank">Assembly program</a> at the Berkman Klein Center at Harvard University & MIT Media Lab. <br><br>
-						<i id="disclaimer">Please note: This project is the work of individuals who participated in the Assembly program. If named, participants' employers are provided for identification purposes only.</i></span>
-					</div>
-
-
-
-					<div class="container clearfix">
-
-						<div class="col-md-6 bottommargin">
-
-							<div class="team team-list clearfix">
-								<div class="team-image">
-									<img src="img/chmielinski_kasia.png" alt="chmielinski_kasia">
-								</div>
-								<div class="team-desc">
-									<div class="team-title">
-										<h4>Kasia Chmielinski</h4><span>Product Management</span></div>
-									<div class="team-content">Technologist at the U.S. Digital Service working to improve government technology for the American public. Previously the Product and Partnerships Lead for Scratch, a project at the MIT Media Lab. Ex-Googler, native Bostonian. Dabbled in architecture
-										at the Chinese University of Hong Kong before graduating with a degree in physics from Harvard University. Avid bird-watcher.</div>
-									<a href="https://www.linkedin.com/in/kchmielinski/" target="_blank" class="social-icon si-rounded si-small si-linkedin">
-										<i class="icon-linkedin"></i>
-										<i class="icon-linkedin"></i>
-									</a>
-								</div>
-							</div>
-
-						</div>
-
-						<div class="col-md-6 bottommargin">
-
-							<div class="team team-list clearfix">
-								<div class="team-image">
-									<img src="img/hosny_ahmed.png" alt="hosny_ahmed">
-								</div>
-								<div class="team-desc">
-									<div class="team-title">
-										<h4>Ahmed Hosny</h4><span>Data Science</span></div>
-									<div class="team-content">Machine learning at Dana-Farber Cancer Institute & Harvard Medical School. Design Technology at Harvard Graduate School of Design. Previously Research Fellow at Wyss Institute and Research Affiliate at MIT Media Lab. Architect in a former life.
-										Private Pilot. Chocolate chip cookie addict. </div>
-									<a href="https://ahmedhosny.com/" target="_blank" class="social-icon si-rounded si-small si-dribbble">
-											<i class="icon-line-globe"></i>
-											<i class="icon-line-globe"></i>
-										</a>
-									<a href="https://www.linkedin.com/in/ahmed-hosny-0a057728/" target="_blank" class="social-icon si-rounded si-small si-linkedin">
-										<i class="icon-linkedin"></i>
-										<i class="icon-linkedin"></i>
-									</a>
-									<a href="http://twitter.com/ahmedhosny" target="_blank" class="social-icon si-rounded si-small si-twitter">
-										<i class="icon-twitter"></i>
-										<i class="icon-twitter"></i>
-									</a>
-									<a href="https://github.com/ahmedhosny" target="_blank" class="social-icon si-rounded si-small si-github">
-										<i class="icon-github"></i>
-										<i class="icon-github"></i>
-									</a>
-								</div>
-							</div>
-
+						<div class="heading-block center">
+							<h2>Our Team</h2>
+							<span>We are a group of researchers and technologists working together to tackle the challenges of ethics and governance of Artificial Intelligence as a part of the <a href="https://bkmla.org/" target="_blank">Assembly program</a> at the Berkman Klein Center at Harvard University &amp; MIT Media Lab. <br><br>
+							<i id="disclaimer">Please note: This project is the work of individuals who participated in the Assembly program. If named, participants' employers are provided for identification purposes only.</i></span>
 						</div>
 
 
-						<div class="clear"></div>
-
-						<div class="col-md-6 bottommargin">
-
-							<div class="team team-list clearfix">
-								<div class="team-image">
-									<img src="img/holland_sarah.png" alt="holland_sarah">
-								</div>
-								<div class="team-desc">
-									<div class="team-title">
-										<h4>Sarah Holland</h4><span>Research and Public Policy</span></div>
-									<div class="team-content">Public policy at Google, working on AI, emerging technology, and privacy issues. Previously worked to pass laws on consumer protection and internet accessibility in U.S. Senate, and in global security and foreign policy issues. Degrees from University
-										of Arkansas and Johns Hopkins University, with a stint at the American University in Cairo, Egypt. Aspiring drummer and gardener. Keen baker.</div>
-									<a href="https://www.linkedin.com/in/sarah-holland-b4700946/" target="_blank" class="social-icon si-rounded si-small si-linkedin">
-										<i class="icon-linkedin"></i>
-										<i class="icon-linkedin"></i>
-									</a>
-									<a href="http://twitter.com/hollasarahd" target="_blank" class="social-icon si-rounded si-small si-twitter">
-										<i class="icon-twitter"></i>
-										<i class="icon-twitter"></i>
-									</a>
-								</div>
-							</div>
-
-						</div>
-
-						<div class="col-md-6 bottommargin">
-
-							<div class="team team-list clearfix">
-								<div class="team-image">
-									<img src="img/newman_sarah_1.png" alt="Mary Jane">
-								</div>
-								<div class="team-desc">
-									<div class="team-title">
-										<h4>Sarah Newman</h4><span>Research</span></div>
-									<div class="team-content">Creative Researcher at metaLAB at Harvard, Fellow at the Berkman Klein Center for Internet & Society, and AI Grant Fellow. BA Philosophy, Washington University in St. Louis, MFA Imaging Arts, Rochester Institute of Technology. Creates interactive
-										art installations to explore social, cultural, and philosophical dimensions of artificial intelligence.</div>
-									<a href="https://www.linkedin.com/in/sarah-newman-ba340867/" target="_blank" class="social-icon si-rounded si-small si-linkedin">
-										<i class="icon-linkedin"></i>
-										<i class="icon-linkedin"></i>
-									</a>
-								</div>
-							</div>
-
-						</div>
-
-						<div class="clear"></div>
-
-						<div class="col-md-6 bottommargin">
-
-							<div class="team team-list clearfix">
-								<div class="team-image">
-									<img src="img/josh.png" alt="josh_joseph">
-								</div>
-								<div class="team-desc">
-									<div class="team-title">
-										<h4>Josh Joseph</h4><span>Data Science</span></div>
-									<div class="team-content">AI/ML consultant. Previous startups in data distribution for hedge funds and ML-driven, fully-autonomous proprietary trading. Aero/Astro PhD on modeling and planning in the presence of complex dynamics from MIT. BS in Applied Mathematics and
-										BS in Mechanical Engineering from RIT. Spends too much time arguing about consciousness. Terrible improviser.</div>
-									<a href="https://www.linkedin.com/in/jmjoseph/" target="_blank" class="social-icon si-rounded si-small si-linkedin">
-										<i class="icon-linkedin"></i>
-										<i class="icon-linkedin"></i>
-									</a>
-								</div>
-							</div>
-
-						</div>
-
-					</div>
-
-					<div class="section nopadding" style="background-image: url('img/logos.jpg');">
 
 						<div class="container clearfix">
 
-							<div class="col_one_third nobottommargin">
-								<div class="feature-box media-box">
-									<div class="fbox-media">
-										<img src="img/logo1.png" alt="Why choose Us?">
+							<div class="col-md-6 bottommargin">
+								<div class="team team-list clearfix">
+									<div class="team-image">
+										<img src="img/chmielinski_kasia.png" alt="chmielinski_kasia">
+									</div>
+									<div class="team-desc">
+										<div class="team-title">
+											<h4>Kasia Chmielinski</h4><span>Project Lead</span>
+										</div>
+										<div class="team-content">Technologist at McKinsey working to drive impact in the healthcare industry through advanced analytics. Previously at The US Digital Service (The White House) and the Scratch project at the MIT Media Lab. Ex-Googler, native Bostonian. Dabbled in architecture at the Chinese University of Hong Kong before graduating with a degree in physics from Harvard University. Avid bird-watcher.</div>
+										<a href="https://www.linkedin.com/in/kchmielinski/" target="_blank" class="social-icon si-rounded si-small si-linkedin">
+											<i class="icon-linkedin"></i>
+											<i class="icon-linkedin"></i>
+										</a>
 									</div>
 								</div>
 							</div>
 
-							<div class="col_one_third nobottommargin">
-								<div class="feature-box media-box">
-									<div class="fbox-media">
-										<img src="img/logo2.png" alt="Why choose Us?">
+							<div class="col-md-6 bottommargin">
+								<div class="team team-list clearfix">
+									<div class="team-image">
+										<img src="img/hosny_ahmed.png" alt="hosny_ahmed">
+									</div>
+									<div class="team-desc">
+										<div class="team-title">
+											<h4>Ahmed Hosny</h4><span>Data Science</span>
+										</div>
+										<div class="team-content">Machine learning at Dana-Farber Cancer Institute &amp; Harvard Medical School. Design Technology at Harvard Graduate School of Design. Previously Research Fellow at Wyss Institute and Research Affiliate at MIT Media Lab. Architect in a former life. Private Pilot. Chocolate chip cookie addict.</div>
+										<a href="https://ahmedhosny.com/" target="_blank" class="social-icon si-rounded si-small si-dribbble">
+												<i class="icon-line-globe"></i>
+												<i class="icon-line-globe"></i>
+											</a>
+										<a href="https://www.linkedin.com/in/ahmed-hosny-0a057728/" target="_blank" class="social-icon si-rounded si-small si-linkedin">
+											<i class="icon-linkedin"></i>
+											<i class="icon-linkedin"></i>
+										</a>
+										<a href="http://twitter.com/ahmedhosny" target="_blank" class="social-icon si-rounded si-small si-twitter">
+											<i class="icon-twitter"></i>
+											<i class="icon-twitter"></i>
+										</a>
+										<a href="https://github.com/ahmedhosny" target="_blank" class="social-icon si-rounded si-small si-github">
+											<i class="icon-github"></i>
+											<i class="icon-github"></i>
+										</a>
 									</div>
 								</div>
 							</div>
 
-							<div class="col_one_third nobottommargin col_last">
-								<div class="feature-box media-box">
-									<div class="fbox-media">
-										<img src="img/logo3.png" alt="Why choose Us?">
+
+							<div class="clear"></div>
+
+							<div class="col-md-6 bottommargin">
+								<div class="team team-list clearfix">
+									<div class="team-image">
+										<img src="img/holland_sarah.png" alt="holland_sarah">
+									</div>
+									<div class="team-desc">
+										<div class="team-title">
+											<h4>Sarah Holland</h4><span>Research and Public Policy</span>
+										</div>
+										<div class="team-content">Public policy at Google, working on AI, emerging technology, and privacy issues. Previously worked to pass laws on consumer protection and internet accessibility in U.S. Senate, and in global security and foreign policy issues. Degrees from University of Arkansas and Johns Hopkins University, with a stint at the American University in Cairo, Egypt. Aspiring drummer and gardener. Keen baker.</div>
+										<a href="https://www.linkedin.com/in/sarah-holland-b4700946/" target="_blank" class="social-icon si-rounded si-small si-linkedin">
+											<i class="icon-linkedin"></i>
+											<i class="icon-linkedin"></i>
+										</a>
+										<a href="http://twitter.com/hollasarahd" target="_blank" class="social-icon si-rounded si-small si-twitter">
+											<i class="icon-twitter"></i>
+											<i class="icon-twitter"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 bottommargin">
+								<div class="team team-list clearfix">
+									<div class="team-image">
+										<img src="img/newman_sarah_1.png" alt="Mary Jane">
+									</div>
+									<div class="team-desc">
+										<div class="team-title">
+											<h4>Sarah Newman</h4><span>Research</span>
+										</div>
+										<div class="team-content">Creative Researcher at metaLAB at Harvard, Fellow at the Berkman Klein Center for Internet &amp; Society, and AI Grant Fellow. BA Philosophy, Washington University in St. Louis, MFA Imaging Arts, Rochester Institute of Technology. Creates interactive art installations to explore social, cultural, and philosophical dimensions of artificial intelligence.</div>
+										<a href="https://www.linkedin.com/in/sarah-newman-ba340867/" target="_blank" class="social-icon si-rounded si-small si-linkedin">
+											<i class="icon-linkedin"></i>
+											<i class="icon-linkedin"></i>
+										</a>
 									</div>
 								</div>
 							</div>
 
 							<div class="clear"></div>
 
+							<div class="col-md-6 bottommargin">
+								<div class="team team-list clearfix">
+									<div class="team-image">
+										<img src="img/josh.png" alt="josh_joseph">
+									</div>
+									<div class="team-desc">
+										<div class="team-title">
+											<h4>Josh Joseph</h4><span>AI Research</span>
+										</div>
+										<div class="team-content">Chief Intelligence Architect for MIT's Quest for Intelligence. Previously, Chief Science Officer at Alpha Features, an alternative data distribution platform, and co-founded a proprietary trading company based on machine learning driven strategy discovery and fully autonomous trading. Has done a variety of consulting work across finance, life sciences, and robotics.  Aero/Astro PhD on modeling and planning in the presence of complex dynamics from MIT. BS in Applied Mathematics and Mechanical Engineering from RIT. Spends too much time arguing about consciousness. Terrible improviser.</div>
+										<a href="https://www.linkedin.com/in/jmjoseph/" target="_blank" class="social-icon si-rounded si-small si-linkedin">
+											<i class="icon-linkedin"></i>
+											<i class="icon-linkedin"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 bottommargin">
+								<div class="team team-list clearfix">
+									<div class="team-image">
+										<img src="img/taylor_matt.png" alt="matt_taylor">
+									</div>
+									<div class="team-desc">
+										<div class="team-title">
+											<h4>Matt Taylor</h4><span>Data Science &amp; Workshop Facilitation</span>
+										</div>
+										<div class="team-content">Freelance learning experience designer and facilitator, with a background in AI implementation. Previously worked as an engineer in natural language processing, moderation tool development, and creative coding platform development. Currently creating learning experiences in STEAM for young people, and demystifying AI for all people. Seasoned pun specialist.</div>
+										<a href="https://mewtaylor.com/" target="_blank" class="social-icon si-rounded si-small si-dribbble">
+											<i class="icon-line-globe"></i>
+											<i class="icon-line-globe"></i>
+										</a>
+										<a href="https://www.linkedin.com/in/matthew-taylor-03694642/" target="_blank" class="social-icon si-rounded si-small si-linkedin">
+											<i class="icon-linkedin"></i>
+											<i class="icon-linkedin"></i>
+										</a>
+										<a href="https://github.com/mewtaylor" target="_blank" class="social-icon si-rounded si-small si-github">
+											<i class="icon-github"></i>
+											<i class="icon-github"></i>
+										</a>
+									</div>
+								</div>
+							</div>
 						</div>
+					</section>
+				</div>
 
-					</div>
-
-				</section>
-
-				<section id="section-faq" class="page-section">
+				<section id="section-faq" class="container clearfix page-section">
 
 					<div class="heading-block center">
 						<h2>Frequently Asked Questions</h2>
@@ -630,10 +644,7 @@
 					</div>
 
 					<div class="container clearfix">
-
-
 						<div class="col_half nobottommargin">
-
 							<h4 id="faq-1"><strong>Q.</strong> Do you have a protoype or more information? </h4>
 							<p>Yes, we do! You can take a look at a <a href="https://ahmedhosny.github.io/datanutrition/" target="_blank">live protoype</a> of the Dataset Nutrition Label for the Dollars for Docs dataset that our friends at <a href="https://www.propublica.org/"
 								  target="_blank">ProPublica</a> have made available to our group. We are also currently working on a <a href="https://arxiv.org/abs/1805.03677" target="_blank">paper</a> describing our work, the <a href="https://ahmedhosny.github.io/datanutrition/"
@@ -655,8 +666,6 @@
 
 								<h4 id="faq-7"><strong>Q.</strong> Is your work open source?</h4>
 								<p>Yes. You can view our <a href="https://ahmedhosny.github.io/datanutrition/" target="_blank">live protoype</a> here, and the code behind the prototype on <a href="https://github.com/ahmedhosny/datanutrition" target="_blank">Github</a>.</p>
-
-
 						</div>
 
 						<div class="col_half nobottommargin col_last">
@@ -677,31 +686,82 @@
 
 							<h4 id="faq-7"><strong>Q.</strong> Is this a Harvard/MIT project?</h4>
 							<p>This is a project of Assembly, a program run by the MIT Media Lab and the Berkman Klein Center.</p>
-
-
-
 						</div>
-
 						<div class="clear"></div>
-
-
 					</div>
-
 				</section>
 
-
-				<section id="section-contact" class="page-section topmargin toppadding" style="padding-top: 60px; background-color: #F9F9F9;">
-
-					<div class="container clearfix">
-						<div class="heading-block title-center">
+				<section id="section-contact" class="section page-section topmargin toppadding" style="padding-top: 60px;">
+					<div class="container">
+						<div class="heading-block noborder title-center">
 							<h2>Contact</h2>
-							<span>Are you a <strong>data scientist</strong> who would like to learn more about this project and use our prototype label? A <strong>researcher</strong> curious about building a nutrition label for your dataset or offering feedback on our label components? A <strong>policymaker</strong> or <strong>technologist</strong> who is working on a similar or related idea? A <strong>member of the public</strong> with comments or feedback? All or none of the above? We’d love to hear from you!</span><br>
-							<a href="mailto:nutrition@media.mit.edu" class="button  button-xlarge nobottommargin"><i class="icon-line2-users"></i>Work with us</a> <br>
+							<span>The DNL project is a cross-industry collective. We are happy to welcome more into the fold, whether you are a policymaker, scientist, engineer, designer, or just a curious member of the public. We’d love to hear from you.</span>
 						</div>
-
+						<div class="row contact text-center">
+							<div class="col-xs-12 col-sm-4 col-sm-offset-1">
+								<div id="snav-content1">
+									<!-- Begin Mailchimp Signup Form -->
+									<div id="mc_embed_signup">
+										<form action="https://mit.us19.list-manage.com/subscribe/post?u=90e3cb18de9969a9a056d188f&amp;id=95965c5243" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="contact-form validate" target="_blank" novalidate>
+										    <div id="mc_embed_signup_scroll">
+												<div class="form-group">
+													<label for="mce-EMAIL">Receive updates from the team:</label>
+													<input type="email" placeholder="Email Address" name="EMAIL" class="form-control" id="mce-EMAIL">
+												</div>
+												<div id="mce-responses" class="clear">
+													<div class="response" id="mce-error-response" style="display:none"></div>
+													<div class="response" id="mce-success-response" style="display:none"></div>
+												</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+										    	<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_90e3cb18de9969a9a056d188f_95965c5243" tabindex="-1" value=""></div>
+										    	<div>
+										    		<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+										    	</div>
+										    </div>
+										</form>
+									</div>
+									<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+									<!--End mc_embed_signup-->
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-2">
+								<h2 class="contact-header">OR</h2>
+							</div>
+							<div class="col-xs-12 col-sm-4">
+								<div id="snav-content1">
+									<a href="mailto:nutrition@media.mit.edu" class="button button-xlarge nobottommargin"><i class="icon-line2-users"></i>Send us an email</a>
+								</div>
+							</div>
+						</div>
 					</div>
-
 				</section>
+
+				<div class="container clearfix">
+					<div class="title-center">
+						<h2>In collaboration with:</h2>
+					</div>
+					<div class="col_one_third nobottommargin">
+						<div class="feature-box media-box">
+							<div class="fbox-media">
+								<img src="img/logo1.png" alt="Why choose Us?">
+							</div>
+						</div>
+					</div>
+					<div class="col_one_third nobottommargin">
+						<div class="feature-box media-box">
+							<div class="fbox-media">
+								<img src="img/logo2.png" alt="Why choose Us?">
+							</div>
+						</div>
+					</div>
+					<div class="col_one_third nobottommargin col_last">
+						<div class="feature-box media-box">
+							<div class="fbox-media">
+								<img src="img/logo3.png" alt="Why choose Us?">
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
 
 			</div>
 

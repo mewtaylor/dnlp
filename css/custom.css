@@ -4,7 +4,19 @@
 	Add all your Custom Styled CSS here for New Styles or
 	Overwriting Default Theme Styles for Better Hanlding Updates
 -----------------------------------------------------------------*/
-
-
+@media (min-width: 768px) {
+    .mission-list {
+        font-size: 18px;
+    }
+    .row.mission,
+    .row.contact {
+        display: flex;
+        align-items: center;
+    }
+    .contact-form,
+    .contact-header {
+        margin: 0;
+    }
+}
 
 
