@@ -4,6 +4,53 @@
 	Add all your Custom Styled CSS here for New Styles or
 	Overwriting Default Theme Styles for Better Hanlding Updates
 -----------------------------------------------------------------*/
+.slider-parallax:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+}
+
+.button.mod-aqua,
+.dark .button.mod-aqua {
+    background-color: #1ABC9C;
+}
+
+.button.mod-aqua:hover,
+.dark .button.mod-aqua:hover {
+    background-color: #1f3f66;
+}
+
+.section.mod-picture-below {
+    margin-bottom: 0;
+}
+
+.section.mod-picture-above {
+    margin-top: 0;
+}
+
+.team.mod-alum {
+    display: flex;
+    align-items: center;
+}
+
+.photo-credit {
+    width: 100%;
+    padding: 10px;
+    text-align: right;
+}
+
+.photo-credit.mod-gray {
+    background-color: #F9F9F9;
+}
+
+.photo-credit a {
+    color: #1ABC9C;
+}
+
 @media (min-width: 768px) {
     .mission-list {
         font-size: 18px;
@@ -19,4 +66,8 @@
     }
 }
 
-
+@media (max-width: 767px) {
+    .team.mod-alum {
+        flex-direction: column;
+    }
+}
