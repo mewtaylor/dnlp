@@ -51,6 +51,15 @@
     color: #1ABC9C;
 }
 
+.section-image {
+    height: 550px;
+    overflow: hidden;
+}
+
+.section-image-img {
+    margin: -75px 0;
+}
+
 @media (min-width: 768px) {
     .mission-list {
         font-size: 18px;
@@ -63,6 +72,16 @@
     .contact-form,
     .contact-header {
         margin: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .section-image {
+        height: auto;
+    }
+
+    .section-image-img {
+        margin: -25px 0;
     }
 }
 
