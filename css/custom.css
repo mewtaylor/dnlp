@@ -60,6 +60,10 @@
     margin: -75px 0;
 }
 
+.team-image-img {
+    border-radius: 50%;
+}
+
 @media (min-width: 768px) {
     .mission-list {
         font-size: 18px;
